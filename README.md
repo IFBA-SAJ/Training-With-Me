@@ -1,9 +1,9 @@
 # Training-With-Me
 Projeto da disciplina Engenharia de software, do curso de graduação em Análise e desenvolvimento de Sistemas do IFBA campus Santo Antônio de Jesus 
 ## Equipe do sistema Training With Me:
-*1.Yuri da Silva Mascarenhas Desenvolvedor e Especialista Técnico.
-*2.Pedro Carlos Desenvolvedor e responsável pelos testes.
-*3.Guilherme Cursino Desingner e gerente de projeto.
+<p>*1.Yuri da Silva Mascarenhas Desenvolvedor e Especialista Técnico.<br>
+*2.Pedro Carlos Desenvolvedor e responsável pelos testes.</p>
+*3.Guilherme Cursino Desingner e gerente de projeto.</p>
 ### Descrição:
 Training With Me  é um aplicativo que tem como objetivo entregar treinos personalizados para auxiliar os seus clientes a obter resultados com acompanhamento personalizado em qualquer  lugar a um preço acessível. 
 #### Justificativa:
