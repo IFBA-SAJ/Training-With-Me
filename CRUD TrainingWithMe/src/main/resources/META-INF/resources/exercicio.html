@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CRUD</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+    <!-- add font-awesome cdn version-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='exercicio.js'></script>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-left">
+            <a class="brand" href="index.html">Sistema</a>
+            <div class="tabs">
+                <a href="professor.html">Professores</a>
+            </div>
+            <div class="tabs">
+                <a href="cliente.html">Clientes</a>
+            </div>
+            <div class="tabs">
+                <a class="active" href="exercicio.html">Exercícios</a>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col">
+            <form id="formexercicio">
+                <input type="hidden" name="id" id="id"/>
+                <fieldset id="forms__input">
+                    <legend>Cadastro Exercício</legend>
+                    <p>
+                        <label for="txtipo">Tipo</label>
+                        <input id="txtipo" name="tipo" type="text" required placeholder="Digite o tipo de exercício" />
+                    </p>
+                    <p>
+                        <label for="txdescricao">Descrição</label>
+                        <input id="txdescricao" name="descricao" type="text" required placeholder="Digite a descrição do exercício" />
+                    </p>
+                    <p>
+                        <label for="txserie">Série</label>
+                        <input id="txserie" name="serie" type="number" required placeholder="Digite o número de séries" />
+                    </p>
+                    <p>
+                        <label for="txrepeticao">Repetição</label>
+                        <input id="txrepeticao" name="repeticao" type="number" required placeholder="Digite o número de repetições" />
+                    </p>
+                    <p>
+                        <label for="txcarga">Carga</label>
+                        <input id="txcarga" name="carga" type="number" required placeholder="Digite carga" />
+                    </p>
+                    <p class="text-right">
+                        <input type="submit" class="button primary" value="Salvar" />
+                        <input type="reset" class="button" value="Limpar"/>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+        <div class="col">
+            <table class="striped" id="tableexercicio">
+                <tr>
+                    <th>Tipo</th>
+                    <th>Descrição</th>
+                    <th>Série</th>
+                    <th>Repetição</th>
+                    <th>Carga</th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>CRUD</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://unpkg.com/chota@latest">
+    <!-- add font-awesome cdn version-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src='cliente.js'></script>
+</head>
+
+<body>
+    <nav class="nav">
+        <div class="nav-left">
+            <a class="brand" href="index.html">Sistema</a>
+            <div class="tabs">
+                <a href="professor.html">Professores</a>
+            </div>
+            <div class="tabs">
+                <a class="active" href="cliente.html">Clientes</a>
+            </div>
+            <div class="tabs">
+                <a href="exercicio.html">Exercícios</a>
+            </div>
+        </div>
+    </nav>
+    <div class="row">
+        <div class="col">
+            <form id="formcliente">
+                <input type="hidden" name="id" id="id"/>
+                <fieldset id="forms__input">
+                    <legend>Cadastro Cliente</legend>
+                    <p>
+                        <label for="txcpf">CPF</label>
+                        <input id="txcpf" name="cpf" type="text" required placeholder="Digite o CPF" />
+                    </p>
+                    <p>
+                        <label for="txnome">Nome</label>
+                        <input id="txnome" name="nome" type="text" required placeholder="Digite o nome" />
+                    </p>
+                    <p>
+                        <label for="txemail">Email</label>
+                        <input id="txemail" name="email" type="email" required placeholder="Digite o email" />
+                    </p>
+                    <p>
+                        <label for="txidade">Idade</label>
+                        <input id="txidade" name="idade" type="number" required placeholder="Digite idade" />
+                    </p>
+                    <p>
+                        <label for="txanamnese">Anamnese</label>
+                        <input id="txanamnese" name="anamnese" type="text" required placeholder="Digite a anamnese" />
+                    </p>
+                    <p>
+                        <label for="txaltura">Altura</label>
+                        <input id="txaltura" name="altura" type="number" placeholder="Digite a altura em cm" />
+                    </p>
+                    <p>
+                        <label for="txpeso">Peso</label>
+                        <input id="txpeso" name="peso" type="number" step="0.01" placeholder="Digite o peso em kg" />
+                    </p>
+                    <p>
+                        <label for="tximc">IMC</label>
+                        <input id="tximc" name="imc" type="number" step="0.01" placeholder="Digite o IMC" />
+                    </p>
+                    <p class="text-right">
+                        <input type="submit" class="button primary" value="Salvar" />
+                        <input type="reset" class="button" value="Limpar"/>
+                    </p>
+                </fieldset>
+            </form>
+        </div>
+        <div class="col">
+            <table class="striped" id="tablecliente">
+                <tr>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th></th>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+</body>
+</html>
