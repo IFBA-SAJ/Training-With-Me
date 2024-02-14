@@ -11,7 +11,7 @@ Training With Me  é um aplicativo que tem como objetivo entregar treinos person
 # Justificativa:
 Com o aumento da procura por atividades físicas as redes de academia e espaços fitness estão cada vez mais lotados,tendo os profissionais sobrecarregados e levando muitas vezes a atrasar o treino de seus clientes, dentro desse contexto o aplicativo training with me surge como uma forma prática e direcionada de seus clientes levarem uma orientação feita por profissionais qualificados sem precisar pegar fila e tendo acesso a um treino direto em seus celulares.  
 
-#Funcionamento do Código
+# Funcionamento do Código:
 Para o código funcionar é necessário ter o java configurado na máquina.
 É necessário alterar o pom.xml para a versão do java em uso na máquina.
 Inserir './mvnw compile quarkus:dev' no terminal sem as aspas para ligar o servidor.
